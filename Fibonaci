@@ -17,9 +17,13 @@ public class Fibonaci {
     Scanner input = new Scanner(System.in);
     System.out.println("Input bilangan : "); 
     
+    int jumlah=0;
+    
     int bil = input.nextInt();
     for ( int i=1; i<= bil ; i++)
-        System.out.print(fibonaci(i)+ " ");
+        jumlah = fibonaci(i)+jumlah;
+        System.out.println("hasilnya : "+jumlah);
+        //System.out.print(fibonaci(i)+ " ");
         System.out.println();
     }
     private static int fibonaci(int bil)
